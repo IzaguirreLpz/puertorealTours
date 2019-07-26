@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta property="og:url"              content="https://izaguirrelpz.github.io/puertorealTours/" />
+  <meta property="og:url"              content="https://atlashome.hn/inmueble/{{id}}" />
 <meta property="og:title"              content="Ingresa a nuestro tour en Puerto Real" />
 <meta property="og:description"        content="Reserva nuestra propiedad de rio o de playa" />
 <meta property="og:image"              content="https://izaguirrelpz.github.io/puertorealTours/img/fotos/04.jpg" />
@@ -20,9 +20,18 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 
+<style media="screen">
+
+  .row-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:50px;
+  }
+</style>
+
 <body>
-    <nav style="margin: 0 0 30px 0" class="navbar navbar-expand-lg navbar-dark nav-color">
-        <a class="navbar-brand" href="#">Puerto Real</a>
+    <nav class="navbar navbar-expand-lg navbar-dark nav-color">
+        <a class="navbar-brand" href="#"> <img src="img\LOGO PUERTO REAL.png" width="70px"> </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -30,6 +39,9 @@
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
                    <a class="nav-link waves-effect waves-light" href="#">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link waves-effect waves-light" href="#">Tiempo Compartido</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link waves-effect waves-light" href="#">Precios</a>
@@ -41,120 +53,122 @@
                         <a class="dropdown-item waves-effect waves-light" href="#">Puerto Real - Playa</a>
                     </div>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link waves-effect waves-light" href="#">Contacto</a>
+                </li>
             </ul>
         </div>
     </nav>
   <!-- Start your project here-->
-    <div class="container ">
-        <div class="row">
-            <div class="col-12">
-
-              <!--Carousel Wrapper-->
-      <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
-          <!--Indicators-->
-          <ol class="carousel-indicators">
-            <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-example-2" data-slide-to="1"></li>
-            <li data-target="#carousel-example-2" data-slide-to="2"></li>
-            <li data-target="#carousel-example-2" data-slide-to="3"></li>
-            <li data-target="#carousel-example-2" data-slide-to="4"></li>
-            <li data-target="#carousel-example-2" data-slide-to="5"></li>
-            <li data-target="#carousel-example-2" data-slide-to="6"></li>
-
-          </ol>
-          <!--/.Indicators-->
-          <!--Slides-->
-          <div class="carousel-inner" role="listbox">
-            <div class="carousel-item active">
-                <img class="d-block w-100 img-fluid" src="img\fotos\01.jpg"
-                  alt="First slide">
-                <div class="mask rgba-black-light"></div>
-              <div class="carousel-caption">
-                <h3 class="h3-responsive">Propiedad De Rio</h3>
-                <p>Lorem ipsum dolor sit amet</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <!--Mask color-->
-                <img class="d-block w-100 img-fluid" src="img\fotos\02.jpg"
-                  alt="Second slide">
-                <div class="mask rgba-black-strong"></div>
-              <div class="carousel-caption">
-                <h3 class="h3-responsive">Propiedad De Playa</h3>
-                <p>Lorem ipsum dolor sit amet</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <!--Mask color-->
-                <img class="d-block w-100 img-fluid" src="img\fotos\03.jpg"
-                  alt="Third slide">
-                <div class="mask rgba-black-slight"></div>
-              <div class="carousel-caption">
-                <h3 class="h3-responsive">Cabaña De Rio</h3>
-                <p>Lorem ipsum dolor sit amet</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-                <!--Mask color-->
-                  <img class="d-block w-100 img-fluid" src="img\fotos\04.jpg"
-                    alt="Second slide">
-                  <div class="mask rgba-black-strong"></div>
-                <div class="carousel-caption">
-                  <h3 class="h3-responsive">Propiedad De Playa</h3>
-                  <p>Lorem ipsum dolor sit amet</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                  <!--Mask color-->
-                    <img class="d-block w-100 img-fluid" src="img\fotos\05.jpg"
-                      alt="Second slide">
-                    <div class="mask rgba-black-strong"></div>
-                  <div class="carousel-caption">
-                    <h3 class="h3-responsive">Propiedad De Playa</h3>
-                    <p>Lorem ipsum dolor sit amet</p>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                    <!--Mask color-->
-                      <img class="d-block w-100 img-fluid" src="img\fotos\06.jpg"
-                        alt="Second slide">
-                      <div class="mask rgba-black-strong"></div>
-                    <div class="carousel-caption">
-                      <h3 class="h3-responsive">Propiedad De Playa</h3>
-                      <p>Lorem ipsum dolor sit amet</p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                      <!--Mask color-->
-                      <img class="d-block w-100 img-fluid" src="img\fotos\07.jpg"
-                          alt="Second slide">
-                        <div class="mask rgba-black-strong"></div>
-                      <div class="carousel-caption">
-                        <h3 class="h3-responsive">Propiedad De Playa</h3>
-                        <p>Lorem ipsum dolor sit amet</p>
-                      </div>
-                    </div>
-          </div>
-          <!--/.Slides-->
-          <!--Controls-->
-          <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-          <!--/.Controls-->
-        </div>
-        <!--/.Carousel Wrapper-->
 
 
-      </div>
-        </div>
+  <!--Carousel Wrapper-->
+<div id="carousel-example-1" class="carousel slide carousel-fade" data-ride="carousel" data-interval="false">
+
+<!--Indicators-->
+<ol class="carousel-indicators">
+<li data-target="#carousel-example-1" data-slide-to="0" class="active"></li>
+<li data-target="#carousel-example-1" data-slide-to="1"></li>
+<li data-target="#carousel-example-1" data-slide-to="2"></li>
+</ol>
+<!--/.Indicators-->
+
+<!--Slides-->
+<div class="carousel-inner" role="listbox">
+
+<!--First slide-->
+<div class="carousel-item active">
+<!--Mask-->
+<div class="view">
+  <div class="full-bg-img flex-center white-text">
+    <ul class="animated fadeInUp col-md-12 list-unstyled">
+             <li>
+               <h1 class="font-weight-bold text-uppercase">Puerto Real</h1>
+             </li>
+             <li>
+               <p class="font-weight-bold text-uppercase py-4">Hola Mundo!</p>
+             </li>
+             <li>
+               <a target="_blank" href="https://youtu.be/Sn_chl7Ym64" class="btn btn-primary btn-rounded btn-lg">Video</a>
+             </li>
+           </ul>
+  </div>
+</div>
+<!--/.Mask-->
+</div>
+<!--/.First slide-->
+
+<!--Second slide -->
+<div class="carousel-item">
+<!--Mask-->
+<div class="view">
+  <div class="full-bg-img flex-center white-text">
+    <ul class="animated fadeInUp col-md-12 list-unstyled">
+             <li>
+               <h1 class="font-weight-bold text-uppercase">Puerto Real</h1>
+             </li>
+             <li>
+               <p class="font-weight-bold text-uppercase py-4">Hola Mundo!</p>
+             </li>
+             <li>
+               <a target="_blank" href="https://youtu.be/Sn_chl7Ym64" class="btn btn-primary btn-rounded btn-lg">Video</a>
+             </li>
+           </ul>
+  </div>
+</div>
+<!--/.Mask-->
+</div>
+<!--/.Second slide -->
+
+
+<!--Second slide -->
+<div class="carousel-item">
+<!--Mask-->
+<div class="view">
+  <div class="full-bg-img flex-center white-text">
+    <ul class="animated fadeInUp col-md-12 list-unstyled">
+             <li>
+               <h1 class="font-weight-bold text-uppercase">Puerto Real</h1>
+             </li>
+             <li>
+               <p class="font-weight-bold text-uppercase py-4">Hola Mundo!</p>
+             </li>
+             <li>
+               <a target="_blank" href="https://youtu.be/Sn_chl7Ym64" class="btn btn-primary btn-rounded btn-lg">Video</a>
+             </li>
+           </ul>
+  </div>
+</div>
+<!--/.Mask-->
+</div>
+<!--/.Second slide -->
+
+</div>
+<!--/.Slides-->
+
+<!--Controls-->
+<a class="carousel-control-prev" href="#carousel-example-1" role="button" data-slide="prev">
+<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+<span class="sr-only">Previous</span>
+</a>
+<a class="carousel-control-next" href="#carousel-example-1" role="button" data-slide="next">
+<span class="carousel-control-next-icon" aria-hidden="true"></span>
+<span class="sr-only">Next</span>
+</a>
+<!--/.Controls-->
+</div>
+<!--/.Carousel Wrapper-->
+
+
+
+
+
+
+
+        <div class="container ">
     <div class="row">
       <div class="col-12">
-          <h1 style="text-align: center; margin: 30px">Proyectos</h1>
+          <h1 style="text-align: center; margin: 30px">Nuestos Proyectos</h1>
       </div>
     </div>
 
@@ -164,7 +178,7 @@
               <div class="card">
 
                   <!-- Card image -->
-                  <div class="view overlay">
+                  <div class="overlay">
                     <img class="card-img-top" src="img\fotos\playa\03.jpg" alt="Card image cap">
                     <a href="#!">
                       <div class="mask rgba-white-slight"></div>
@@ -175,11 +189,7 @@
                   <div class="card-body">
 
                     <!-- Title -->
-                    <h4 class="card-title">Puerto Real Propiedad De Playa</h4>
-                    <!-- Text -->
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor turpis et mi fermentum pharetra quis suscipit mauris. Praesent sit amet laoreet velit. Duis eget augue eget purus rhoncus elementum. Proin efficitur lectus in magna condimentum lacinia. In felis orci, commodo a arcu quis, efficitur venenatis nibh. Morbi at dui id mauris condimentum condimentum a eget mauris.</p>
-                    <!-- Button -->
-                    <a href="#" class="btn btn-primary" target="_blank">Tour Virtual</a>
+                    <h4 class="card-title">Puerto Real <br> Proyecto De Playa</h4>
 
                   </div>
 
@@ -191,7 +201,7 @@
              <div class="card">
 
                 <!-- Card image -->
-                <div class="view overlay">
+                <div class="overlay">
                   <img class="card-img-top" src="img\fotos\rio\07.jpg" alt="Card image cap">
                   <a href="#!">
                     <div class="mask rgba-white-slight"></div>
@@ -202,18 +212,209 @@
                 <div class="card-body">
 
                   <!-- Title -->
-                  <h4 class="card-title">Puerto Real Propiedad De Rio</h4>
-                  <!-- Text -->
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor turpis et mi fermentum pharetra quis suscipit mauris. Praesent sit amet laoreet velit. Duis eget augue eget purus rhoncus elementum. Proin efficitur lectus in magna condimentum lacinia. In felis orci, commodo a arcu quis, efficitur venenatis nibh. Morbi at dui id mauris condimentum condimentum a eget mauris.</p>
-                  <!-- Button -->
-                  <a href="#" class="btn btn-primary" target="_blank">Tour Virtual</a>
-
+                  <h4 class="card-title">Puerto Real <br> Proyecto De Rio</h4>
                 </div>
 
 </div>
 <!-- Card -->
         </div>
       </div>
+
+      <div class="row">
+        <div class="col-12">
+            <h1 style="text-align: center; margin: 30px">Tiempo Compartido</h1>
+        </div>
+      </div>
+
+
+      	<div class="row">
+      		<div class="col-md-12">
+      			<div class="row">
+      				<div class="col-md-6 text-center">
+                <figure>
+                  <img alt="Bootstrap Image Preview" src="img\fotos\timeshare.jpg" width="200px" class="rounded-circle img-fluid" />
+                  <figcaption>Tiempo Compartido</figcaption>
+                </figure>
+      				</div>
+      				<div class="col-md-6">
+      					<p>
+      						Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit</strong>. Aliquam eget sapien sapien. Curabitur in metus urna. In hac habitasse platea dictumst. Phasellus eu sem sapien, sed vestibulum velit. Nam purus nibh, lacinia non faucibus et, pharetra in dolor. Sed iaculis posuere diam ut cursus. <em>Morbi commodo sodales nisi id sodales. Proin consectetur, nisi id commodo imperdiet, metus nunc consequat lectus, id bibendum diam velit et dui.</em> Proin massa magna, vulputate nec bibendum nec, posuere nec lacus. <small>Aliquam mi erat, aliquam vel luctus eu, pharetra quis elit. Nulla euismod ultrices massa, et feugiat ipsum consequat eu.</small>
+      					</p>
+      				</div>
+      			</div>
+      		</div>
+      	</div>
+
+
+        <div class="row">
+          <div class="col-12">
+              <h1 style="text-align: center; margin: 30px">Precios</h1>
+          </div>
+        </div>
+
+
+<div class="row-grid">
+
+        <!-- Card -->
+<div class="card">
+
+  <!-- Card content -->
+  <div class="card-body">
+
+    <!-- Title -->
+    <h4 class="card-title"><a>Precio 1</a></h4>
+    <!-- Text -->
+    <p class="card-text">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.</p>
+    <!-- Button -->
+    <a href="#" class="btn btn-primary">Cotizar</a>
+
+  </div>
+
+</div>
+<!-- Card -->
+
+
+<!-- Card -->
+<div class="card">
+
+<!-- Card content -->
+<div class="card-body">
+
+<!-- Title -->
+<h4 class="card-title"><a>Precio 2</a></h4>
+<!-- Text -->
+<p class="card-text">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.</p>
+<!-- Button -->
+<a href="#" class="btn btn-primary">Cotizar</a>
+
+</div>
+
+</div>
+<!-- Card -->
+
+
+
+<!-- Card -->
+<div class="card">
+
+<!-- Card content -->
+<div class="card-body">
+
+<!-- Title -->
+<h4 class="card-title"><a>Precio 3</a></h4>
+<!-- Text -->
+<p class="card-text">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.</p>
+<!-- Button -->
+<a href="#" class="btn btn-primary">Cotizar</a>
+
+</div>
+
+</div>
+<!-- Card -->
+
+
+
+</div>
+
+
+<!-- Section: Contact v.1 -->
+<section class="my-5">
+
+  <!-- Section heading -->
+  <h2 class="h1-responsive font-weight-bold text-center my-5">Contact us</h2>
+  <!-- Section description -->
+  <p class="text-center w-responsive mx-auto pb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam
+    eum porro a pariatur veniam.</p>
+
+  <!-- Grid row -->
+  <div class="row">
+
+    <!-- Grid column -->
+    <div class="col-lg-5 mb-lg-0 mb-4">
+
+      <!-- Form with header -->
+      <div class="card">
+        <div class="card-body">
+          <!-- Header -->
+          <div class="form-header blue accent-1">
+            <h3 class="mt-2"><i class="fas fa-envelope"></i> Write to us:</h3>
+          </div>
+          <p class="dark-grey-text">We'll write rarely, but only the best content.</p>
+          <!-- Body -->
+          <div class="md-form">
+            <i class="fas fa-user prefix grey-text"></i>
+            <input type="text" id="form-name" class="form-control">
+            <label for="form-name">Your name</label>
+          </div>
+          <div class="md-form">
+            <i class="fas fa-envelope prefix grey-text"></i>
+            <input type="text" id="form-email" class="form-control">
+            <label for="form-email">Your email</label>
+          </div>
+          <div class="md-form">
+            <i class="fas fa-tag prefix grey-text"></i>
+            <input type="text" id="form-Subject" class="form-control">
+            <label for="form-Subject">Subject</label>
+          </div>
+          <div class="md-form">
+            <i class="fas fa-pencil-alt prefix grey-text"></i>
+            <textarea id="form-text" class="form-control md-textarea" rows="3"></textarea>
+            <label for="form-text">Send message</label>
+          </div>
+          <div class="text-center">
+            <button class="btn btn-light-blue">Submit</button>
+          </div>
+        </div>
+      </div>
+      <!-- Form with header -->
+
+    </div>
+    <!-- Grid column -->
+
+    <!-- Grid column -->
+    <div class="col-lg-7">
+
+      <!--Google map-->
+      <div id="map-container-section" class="z-depth-1-half map-container-section mb-4" style="height: 400px">
+        <iframe src="https://maps.google.com/maps?q=Manhatan&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0"
+          style="border:0" allowfullscreen></iframe>
+      </div>
+      <!-- Buttons-->
+      <div class="row text-center">
+        <div class="col-md-4">
+          <a class="btn-floating blue accent-1">
+            <i class="fas fa-map-marker-alt"></i>
+          </a>
+          <p>New York, 94126</p>
+          <p class="mb-md-0">United States</p>
+        </div>
+        <div class="col-md-4">
+          <a class="btn-floating blue accent-1">
+            <i class="fas fa-phone"></i>
+          </a>
+          <p>+ 01 234 567 89</p>
+          <p class="mb-md-0">Mon - Fri, 8:00-22:00</p>
+        </div>
+        <div class="col-md-4">
+          <a class="btn-floating blue accent-1">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <p>info@gmail.com</p>
+          <p class="mb-0">sale@gmail.com</p>
+        </div>
+      </div>
+
+    </div>
+    <!-- Grid column -->
+
+  </div>
+  <!-- Grid row -->
+
+</section>
+<!-- Section: Contact v.1 -->
+
+
   </div>
   <!-- Footer -->
 <footer style="margin: 30px 0 0 0px" class="page-footer font-small nav-color  pt-4">
@@ -234,18 +435,8 @@
           </a>
         </li>
         <li class="list-inline-item">
-          <a class="btn-floating btn-gplus mx-1">
-            <i class="fab fa-google-plus-g"> </i>
-          </a>
-        </li>
-        <li class="list-inline-item">
           <a class="btn-floating btn-li mx-1">
             <i class="fab fa-linkedin-in"> </i>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a class="btn-floating btn-dribbble mx-1">
-            <i class="fab fa-dribbble"> </i>
           </a>
         </li>
       </ul>
